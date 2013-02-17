@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2345716216D11B1F005D747D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2345716116D11B1F005D747D /* UIKit.framework */; };
+		2345716416D11B1F005D747D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2345716316D11B1F005D747D /* Foundation.framework */; };
+		2345716616D11B1F005D747D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2345716516D11B1F005D747D /* CoreGraphics.framework */; };
+		2345716C16D11B1F005D747D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2345716A16D11B1F005D747D /* InfoPlist.strings */; };
+		2345716E16D11B1F005D747D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2345716D16D11B1F005D747D /* main.m */; };
+		2345717216D11B1F005D747D /* BBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2345717116D11B1F005D747D /* BBAppDelegate.m */; };
+		2345717416D11B1F005D747D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2345717316D11B1F005D747D /* Default.png */; };
+		2345717616D11B1F005D747D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2345717516D11B1F005D747D /* Default@2x.png */; };
+		2345717816D11B1F005D747D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2345717716D11B1F005D747D /* Default-568h@2x.png */; };
+		2345717B16D11B1F005D747D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2345717916D11B1F005D747D /* MainStoryboard.storyboard */; };
+		2345717E16D11B1F005D747D /* BBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2345717D16D11B1F005D747D /* BBViewController.m */; };
+		2345718616D11B5A005D747D /* WebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2345718516D11B5A005D747D /* WebBrowserViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2345715E16D11B1F005D747D /* iOSBuiltInBrowserSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSBuiltInBrowserSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2345716116D11B1F005D747D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2345716316D11B1F005D747D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2345716516D11B1F005D747D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2345716916D11B1F005D747D /* iOSBuiltInBrowserSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSBuiltInBrowserSample-Info.plist"; sourceTree = "<group>"; };
+		2345716B16D11B1F005D747D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2345716D16D11B1F005D747D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2345716F16D11B1F005D747D /* iOSBuiltInBrowserSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSBuiltInBrowserSample-Prefix.pch"; sourceTree = "<group>"; };
+		2345717016D11B1F005D747D /* BBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBAppDelegate.h; sourceTree = "<group>"; };
+		2345717116D11B1F005D747D /* BBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBAppDelegate.m; sourceTree = "<group>"; };
+		2345717316D11B1F005D747D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		2345717516D11B1F005D747D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		2345717716D11B1F005D747D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2345717A16D11B1F005D747D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		2345717C16D11B1F005D747D /* BBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBViewController.h; sourceTree = "<group>"; };
+		2345717D16D11B1F005D747D /* BBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBViewController.m; sourceTree = "<group>"; };
+		2345718416D11B5A005D747D /* WebBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebBrowserViewController.h; sourceTree = "<group>"; };
+		2345718516D11B5A005D747D /* WebBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebBrowserViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2345715B16D11B1F005D747D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2345716216D11B1F005D747D /* UIKit.framework in Frameworks */,
+				2345716416D11B1F005D747D /* Foundation.framework in Frameworks */,
+				2345716616D11B1F005D747D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2345715516D11B1F005D747D = {
+			isa = PBXGroup;
+			children = (
+				2345716716D11B1F005D747D /* iOSBuiltInBrowserSample */,
+				2345716016D11B1F005D747D /* Frameworks */,
+				2345715F16D11B1F005D747D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2345715F16D11B1F005D747D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2345715E16D11B1F005D747D /* iOSBuiltInBrowserSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2345716016D11B1F005D747D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2345716116D11B1F005D747D /* UIKit.framework */,
+				2345716316D11B1F005D747D /* Foundation.framework */,
+				2345716516D11B1F005D747D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2345716716D11B1F005D747D /* iOSBuiltInBrowserSample */ = {
+			isa = PBXGroup;
+			children = (
+				2345718416D11B5A005D747D /* WebBrowserViewController.h */,
+				2345718516D11B5A005D747D /* WebBrowserViewController.m */,
+				2345717016D11B1F005D747D /* BBAppDelegate.h */,
+				2345717116D11B1F005D747D /* BBAppDelegate.m */,
+				2345717916D11B1F005D747D /* MainStoryboard.storyboard */,
+				2345717C16D11B1F005D747D /* BBViewController.h */,
+				2345717D16D11B1F005D747D /* BBViewController.m */,
+				2345716816D11B1F005D747D /* Supporting Files */,
+			);
+			path = iOSBuiltInBrowserSample;
+			sourceTree = "<group>";
+		};
+		2345716816D11B1F005D747D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2345716916D11B1F005D747D /* iOSBuiltInBrowserSample-Info.plist */,
+				2345716A16D11B1F005D747D /* InfoPlist.strings */,
+				2345716D16D11B1F005D747D /* main.m */,
+				2345716F16D11B1F005D747D /* iOSBuiltInBrowserSample-Prefix.pch */,
+				2345717316D11B1F005D747D /* Default.png */,
+				2345717516D11B1F005D747D /* Default@2x.png */,
+				2345717716D11B1F005D747D /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2345715D16D11B1F005D747D /* iOSBuiltInBrowserSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2345718116D11B1F005D747D /* Build configuration list for PBXNativeTarget "iOSBuiltInBrowserSample" */;
+			buildPhases = (
+				2345715A16D11B1F005D747D /* Sources */,
+				2345715B16D11B1F005D747D /* Frameworks */,
+				2345715C16D11B1F005D747D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSBuiltInBrowserSample;
+			productName = iOSBuiltInBrowserSample;
+			productReference = 2345715E16D11B1F005D747D /* iOSBuiltInBrowserSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2345715616D11B1F005D747D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BB;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "逸見 誠";
+			};
+			buildConfigurationList = 2345715916D11B1F005D747D /* Build configuration list for PBXProject "iOSBuiltInBrowserSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2345715516D11B1F005D747D;
+			productRefGroup = 2345715F16D11B1F005D747D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2345715D16D11B1F005D747D /* iOSBuiltInBrowserSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2345715C16D11B1F005D747D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2345716C16D11B1F005D747D /* InfoPlist.strings in Resources */,
+				2345717416D11B1F005D747D /* Default.png in Resources */,
+				2345717616D11B1F005D747D /* Default@2x.png in Resources */,
+				2345717816D11B1F005D747D /* Default-568h@2x.png in Resources */,
+				2345717B16D11B1F005D747D /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2345715A16D11B1F005D747D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2345716E16D11B1F005D747D /* main.m in Sources */,
+				2345717216D11B1F005D747D /* BBAppDelegate.m in Sources */,
+				2345717E16D11B1F005D747D /* BBViewController.m in Sources */,
+				2345718616D11B5A005D747D /* WebBrowserViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2345716A16D11B1F005D747D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2345716B16D11B1F005D747D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2345717916D11B1F005D747D /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2345717A16D11B1F005D747D /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2345717F16D11B1F005D747D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2345718016D11B1F005D747D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2345718216D11B1F005D747D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSBuiltInBrowserSample/iOSBuiltInBrowserSample-Prefix.pch";
+				INFOPLIST_FILE = "iOSBuiltInBrowserSample/iOSBuiltInBrowserSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2345718316D11B1F005D747D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSBuiltInBrowserSample/iOSBuiltInBrowserSample-Prefix.pch";
+				INFOPLIST_FILE = "iOSBuiltInBrowserSample/iOSBuiltInBrowserSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2345715916D11B1F005D747D /* Build configuration list for PBXProject "iOSBuiltInBrowserSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2345717F16D11B1F005D747D /* Debug */,
+				2345718016D11B1F005D747D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2345718116D11B1F005D747D /* Build configuration list for PBXNativeTarget "iOSBuiltInBrowserSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2345718216D11B1F005D747D /* Debug */,
+				2345718316D11B1F005D747D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2345715616D11B1F005D747D /* Project object */;
+}
