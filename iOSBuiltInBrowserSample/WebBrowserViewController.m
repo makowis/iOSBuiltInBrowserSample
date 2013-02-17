@@ -10,12 +10,6 @@
 
 @implementation WebBrowserViewController
 
-@synthesize webView;
-@synthesize url_;
-@synthesize backBar;
-@synthesize backBtn;
-@synthesize goBtn;
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -42,15 +36,15 @@
     self.navigationController.navigationBarHidden = YES;
 
     // 戻るボタンを作成（左三角がないので反転）
-    backBar.transform = CGAffineTransformMakeScale(-1,1);
+    _backBar.transform = CGAffineTransformMakeScale(-1,1);
     //戻ると進むを非活性
-    backBtn.enabled = NO;
-    goBtn.enabled = NO;
+    _backBtn.enabled = NO;
+    _goBtn.enabled = NO;
 
     // インジケーターの表示
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     // URLの読み込み
-    [webView loadRequest:[NSURLRequest requestWithURL:url_]];
+    [_webView loadRequest:[NSURLRequest requestWithURL:_url_]];
 }
 
 - (void)viewDidUnload
@@ -66,18 +60,22 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+// UIWebViewDelegate ってかいとくと Alt クリックで他にどんなメソッドがあるか確認するのが楽なのでおすすめ。
+// pragma mark は趣味で。上のほうのメソッドジャンプのやつでラインがはいってみやすいよ。
+#pragma mark - UIWebViewDelegate
 /******************************/
 // WebViewイベント関数
 /******************************/
 // ページの読み込み終了
--(void)webViewDidFinishLoad:(UIWebView*)webView_ {
-    // インジケーターの非表示
+-(void)webViewDidFinishLoad:(UIWebView*)aWebView {
+    // インジケーターの非表示m
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     // ボタンの活性・非活性を切り替え
-    backBtn.enabled = webView_.canGoBack;
-    goBtn.enabled = webView_.canGoForward;
+    _backBtn.enabled = aWebView.canGoBack;
+    _goBtn.enabled = aWebView.canGoForward;
 }
 
+#pragma mark - actions
 /******************************/
 // 自作イベント関数
 /******************************/
@@ -88,7 +86,7 @@
     // インジケーターの非表示
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     // webViewのデリゲート解放
-    webView.delegate = nil;
+    _webView.delegate = nil;
     
     // 現在のViewを閉じる
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -98,23 +96,23 @@
 -(IBAction)reloadUrl:(id)sender {
     // インジケーターの表示
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-    [webView reload];
+    [_webView reload];
 }
 
 // 戻るボタン
 -(IBAction)back:(id)sender{
-    [webView goBack];
+    [_webView goBack];
 }
 
 // 進むボタン
 -(IBAction)forward:(id)sender {
-    [webView goForward];
+    [_webView goForward];
 }
 
 // サファリで開く
 -(IBAction)openSafari:(id)sender {
     // 現在のURLを取得
-    NSString* url = [webView stringByEvaluatingJavaScriptFromString:@"document.URL"];
+    NSString* url = [_webView stringByEvaluatingJavaScriptFromString:@"document.URL"];
     // サファリでオープン
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
 }
