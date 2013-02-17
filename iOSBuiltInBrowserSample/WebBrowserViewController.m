@@ -66,6 +66,9 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+// UIWebViewDelegate ってかいとくと Alt クリックで他にどんなメソッドがあるか確認するのが楽なのでおすすめ。
+// pragma mark は趣味で。上のほうのメソッドジャンプのやつでラインがはいってみやすいよ。
+#pragma mark - UIWebViewDelegate
 /******************************/
 // WebViewイベント関数
 /******************************/
@@ -78,6 +81,7 @@
     goBtn.enabled = webView_.canGoForward;
 }
 
+#pragma mark - actions
 /******************************/
 // 自作イベント関数
 /******************************/
