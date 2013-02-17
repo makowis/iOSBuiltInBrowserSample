@@ -67,12 +67,12 @@
 // WebViewイベント関数
 /******************************/
 // ページの読み込み終了
--(void)webViewDidFinishLoad:(UIWebView*)webView_ {
-    // インジケーターの非表示
+-(void)webViewDidFinishLoad:(UIWebView*)aWebView {
+    // インジケーターの非表示m
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     // ボタンの活性・非活性を切り替え
-    _backBtn.enabled = webView_.canGoBack;
-    _goBtn.enabled = webView_.canGoForward;
+    _backBtn.enabled = aWebView.canGoBack;
+    _goBtn.enabled = aWebView.canGoForward;
 }
 
 #pragma mark - actions
