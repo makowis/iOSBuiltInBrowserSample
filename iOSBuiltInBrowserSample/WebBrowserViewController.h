@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WebBrowserViewController : UIViewController
+@interface WebBrowserViewController : UIViewController <UIWebViewDelegate>
 
 @property(nonatomic,retain)IBOutlet UIWebView *webView;
 @property(nonatomic,retain)NSURL *url_;
